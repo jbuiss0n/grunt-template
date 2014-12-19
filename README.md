@@ -1,7 +1,8 @@
 grunt-template
 ==============
 
-> A grunt template for angular application building
+> A grunt template for frontend application building
+> This template currently use AngularJS, but can be use with just a little modification for any frameworks
 
 Requirements
 ------------
