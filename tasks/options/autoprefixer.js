@@ -7,7 +7,7 @@ module.exports = {
   },
   compile: {
     expand: true,
-    cwd: '.compile/css',
+    cwd: 'dist/css',
     src: 'style.css',
     dest: 'dist/css'
   },
