@@ -1,0 +1,28 @@
+﻿<!doctype html>
+<html ng-app="grunt-template-app">
+<head>
+  <meta charset="utf-8">
+  <title>Grunt template</title>
+  <meta name="description" content="A grunt template for angular application building">
+  <!-- fileblock:css styles -->
+  <!-- endfileblock -->
+</head>
+<body>
+  <header>
+    <a ui-sref="home"><h1>Grunt building template</h1></a>
+    <ul class="nav">
+      <li ng-class="{ active: $state.includes('home') }"><a ui-sref="home">Home</a></li>
+      <li ng-class="{ active: $state.includes('creators') }"><a ui-sref="comics">Comics</a></li>
+      <li ng-class="{ active: $state.includes('characters') }"><a ui-sref="characters">Characters</a></li>
+    </ul>
+  </header>
+  <div class="container">
+    <ui-view />
+  </div>
+  <footer>
+    Find the <a href="https://github.com/jbuiss0n/grunt-template" target="_blank">source code on Github</a>.
+  </footer>
+  <!-- fileblock:js scripts -->
+  <!-- endfileblock -->
+</body>
+</html>

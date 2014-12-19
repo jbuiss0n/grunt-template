@@ -1,0 +1,8 @@
+node_modules
+dist
+.tmp
+.compile
+.build
+.newer-cache
+app/bower_components
+npm-debug.log

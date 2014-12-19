@@ -1,0 +1,11 @@
+<div class="comics">
+  <div ng-repeat="comic in controller.comics" class="comics-item">
+    <h3>{{ comic.title }}</h3>
+    <p>
+      <img ng-src="{{ controller.getImage(comic) }}" /><br />
+      Last modified: {{ comic.modified | date }}.<br />
+      Format: {{ comic.format }}.<br />
+      Page count: {{ comic.pageCount }}.<br />
+    </p>
+  </div>
+</div>

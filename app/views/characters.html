@@ -1,0 +1,7 @@
+<div class="characters">
+  <div ng-repeat="character in controller.characters" class="character-item">
+    <h3>{{ character.name }}</h3>
+    <img ng-src="{{ controller.getImage(character) }}" />
+    <p>Last modified: {{ character.modified | date }}.</p>
+  </div>
+</div>
