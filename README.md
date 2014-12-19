@@ -42,6 +42,11 @@ Contributing
 
 Anyone is welcome to submit issues and pull requests
 
+Thanks
+------
+
+Special thanks to [Tim Carry](https://github.com/pixelastic) who greatly helps me understanding almost everything with Grunt.
+
 License
 ------------
 
