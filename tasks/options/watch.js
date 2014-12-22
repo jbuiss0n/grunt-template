@@ -3,7 +3,7 @@
 // Watches files for changes and runs tasks based on the changed files
 module.exports = {
   options: {
-    livereload: 35729
+    livereload: 35730
   },
   styles: {
     options: {
@@ -45,8 +45,8 @@ module.exports = {
     files: [
       'app/scripts/*.js',
       'app/scripts/**/*.js',
-      '!app/scripts/*_test.js',
-      '!app/scripts/**/*_test.js'
+      '!app/scripts/*.test.js',
+      '!app/scripts/**/*.test.js'
     ],
     tasks: [
       'rsync:compileJsApp'

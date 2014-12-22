@@ -20,14 +20,13 @@ module.exports = {
         '.build/images',
         '.build/images/src',
         '.build/images/output',
+        '.build/css',
         '.build/css/src',
         '.build/css/output',
         '.build/js',
         '.build/js/src',
         '.build/js/output',
         '.build/views',
-        '.build/views/src',
-        '.build/views/output',
         'dist/'
       ]
     }

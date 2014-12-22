@@ -23,19 +23,62 @@ Grunt tasks
 
 **grunt compile**
 
-- Clean *dist* directories to start fresh
-- Creates *dist* directory structure
-- Compiles Less to CSS
-- Adds vendor prefixes to CSS files using caniuse.com database
-- Intelligently sync (copy) files, with a diff algorithm (scripts, styles, views, misc)
-- Generates an Angular *constant* service with the content of environment config JSON file
-- Insert CSS and JS tags into *index* HTML files
+- Clean dist
+- Create dist & subfolders
+- Compile *.less into one styles.css
+- Adds vendor prefixes to styles.css
+- Copy JS dependencies from bower
+- Copy JS application files
+- Create an angular constant module with config properties
+- Create an empty templatecache for angular (just to avoid breaking dependency)
+- Copy Html views from application
+- Copy index.html file
+- Add JS & CSS tags into index.html file
+- Copy application misc files (images, robots.txt, favicon.ico, ...)
+
+**grunt build**
+
+- Clean .build & dist folder
+- Create .build & dist & subfolders
+- Copy images to .build folder
+- Minify images
+- Revision images
+- Copy output images to dist
+- Compile *.less into one styles.css in .build folder
+- Concat all css files into styles.css
+- Adds vendor prefixes to styles.css
+- Replace image references with rev version into styles.css
+- Minify styles.css
+- Revision styles.css
+- Copy output styles.css to dist
+- Copy Html views from application to .build folder
+- Replace image references with rev version
+- Remove devcode
+- Put views into angular template cache module
+- Copy JS dependencies from bower to .build folder
+- Copy JS application files to .build folder
+- Create an angular constant module with config properties
+- Annotate angular dependencies
+- Concat all js files into scripts.js
+- Uglify/minify scripts.js
+- Revision scripts.js
+- Copy output scripts.js to dist
+- Copy index.html file to dist folder
+- Add JS & CSS tags into index.html file
+- Remove devcode
+- Copy application misc files (robots.txt, favicon.ico, ...)
+- Output the filesize and gzip size of files
 
 **grunt serve**
 
 - Compile for dev (cf grunt compile)
 - Starts a connect server with livereload
 - Watch files and run their tasks on changes for livereloading in browser
+
+**grunt serve:prod**
+
+- Build for prod (cf grunt build)
+- Starts a connect server with keepalive
 
 Contributing
 ------------

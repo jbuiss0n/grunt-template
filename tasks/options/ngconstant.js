@@ -13,7 +13,20 @@ module.exports = {
   },
   compile: {
     options: {
-      dest: 'dist/js/config.js'
+      dest: 'dist/js/config.js',
+      /* If specific dev config (DO NOT merge with default)
+      constants: {
+        config: grunt.file.readJSON('app/config/dev.json')
+      }*/
+    }
+  },
+  build: {
+    options: {
+      dest: '.build/js/src/config.js',
+      /* If specific prod config (DO NOT merge with default)
+      constants: {
+        config: grunt.file.readJSON('app/config/prod.json')
+      }*/
     }
   }
 };

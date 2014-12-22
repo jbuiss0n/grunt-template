@@ -4,16 +4,24 @@
 module.exports = {
   options: {
     open: false,
-    port: 9000,
-    livereload:false,
+    port: 9001,
     hostname: '0.0.0.0'
   },
   livereload: {
     options: {
-      livereload: true,
+      livereload: 35730,
       base: [
         './dist'
       ]
     }
-  }
+  },
+  keepalive: {
+    options: {
+      keepalive: true,
+      livereload: false,
+      base: [
+        './dist'
+      ]
+    }
+  },
 };

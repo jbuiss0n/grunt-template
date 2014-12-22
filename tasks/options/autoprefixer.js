@@ -15,6 +15,6 @@ module.exports = {
     expand: true,
     cwd: '.build/css/src',
     src: 'style.css',
-    dest: 'dist/css/output'
+    dest: '.build/css/output'
   }
 };

@@ -24,5 +24,18 @@ module.exports = {
         ]
       }
     }
+  },
+  build: {
+    src: 'dist/index.html',
+    blocks: {
+      styles: {
+        cwd: 'dist',
+        src: '*.css'
+      },
+      scripts: {
+        cwd: 'dist',
+        src: '*.js'
+      }
+    }
   }
 };

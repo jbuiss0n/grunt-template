@@ -5,10 +5,24 @@ module.exports = function (grunt) {
     'serve',
     'serve the local compile application',
     function () {
-      grunt.task.run([
-        'compile',
-        'connect:livereload',
-        'watch'
-      ]);
+      var type = (this.args[0] || 'dev');
+      var tasks = [];
+
+      if (type === 'dev') {
+        tasks = tasks.concat([
+          'compile',
+          'connect:livereload',
+          'watch'
+        ]);
+      }
+
+      if (type === 'prod') {
+        tasks = tasks.concat([
+          'build',
+          'connect:keepalive'
+        ]);
+      }
+
+      grunt.task.run(tasks);
     });
 };

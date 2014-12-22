@@ -29,7 +29,7 @@ module.exports = {
         '--archive',
         '--delete',
         '--prune-empty-dirs',
-        '--exclude=*_test.js',
+        '--exclude=*.test.js',
         '--include=*/',
         '--include=*.js',
         '--exclude=*'
@@ -44,14 +44,14 @@ module.exports = {
   },
   compileHtml: {
     options: {
-      src: 'app/*.html',
+      src: 'app/index.html',
       dest: 'dist'
     }
   },
   compileMisc: {
     options: {
-      src: 'app',
-      dest: 'dist',
+      src: 'app/',
+      dest: 'dist/',
       args: [
         '--archive',
         '--prune-empty-dirs',
@@ -60,6 +60,82 @@ module.exports = {
         '--include=images/*',
         '--include=/*.ico',
         '--include=/*.txt',
+        '--exclude=*'
+      ]
+    }
+  },
+
+  buildImg: {
+    options: {
+      src: 'app/images/',
+      dest: '.build/images/'
+    }
+  },
+  buildImgDist: {
+    options: {
+      src: '.build/images/',
+      dest: 'dist/images/'
+    }
+  },
+  buildViews: {
+    options: {
+      src: 'app/views/',
+      dest: '.build/views'
+    }
+  },
+  buildCssDist: {
+    options: {
+      src: '.build/css/output/',
+      dest: 'dist/'
+    }
+  },
+  buildJsBower: {
+    options: {
+      src: [
+        'app/bower_components/angular/angular.js',
+        'app/bower_components/angular-ui-router/release/angular-ui-router.js',
+      ],
+      dest: '.build/js/src/bower'
+    }
+  },
+  buildJsApp: {
+    options: {
+      src: 'app/scripts/',
+      dest: '.build/js/src/app',
+      args: [
+        '--archive',
+        '--delete',
+        '--prune-empty-dirs',
+        '--exclude=*.test.js',
+        '--include=*/',
+        '--include=*.js',
+        '--exclude=*'
+      ]
+    }
+  },
+  buildJsDist: {
+    options: {
+      src: '.build/js/output/',
+      dest: 'dist/'
+    }
+  },
+  buildHtml: {
+    options: {
+      src: 'app/index.html',
+      dest: 'dist'
+    }
+  },
+  buildMisc: {
+    options: {
+      src: 'app/',
+      dest: 'dist',
+      args: [
+        '--archive',
+        '--prune-empty-dirs',
+        '--include=/favicon.ico',
+        '--include=/robots.txt',
+        '--include=/humans.txt',
+        '--include=/version.json',
         '--exclude=*'
       ]
     }
