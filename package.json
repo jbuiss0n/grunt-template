@@ -20,7 +20,6 @@
     "grunt-filerev-assets": "~0.3.2",
     "grunt-mkdir": "~0.1.2",
     "grunt-rsync": "~0.6.2",
-    "grunt-newer": "~0.8.0",
     "grunt-ng-constant": "~1.0.0",
     "grunt-html2js": "~0.2.9",
     "grunt-file-blocks": "~0.3.3",
@@ -28,6 +27,7 @@
     "grunt-cssurlrev": "~0.1.2",
     "grunt-htmlurlrev": "~0.1.0",
     "grunt-ng-annotate": "~0.8.0",
+    "grunt-autoprefixer": "~2.0.0",
     "grunt-bytesize": "~0.1.1"
   },
   "engines": {

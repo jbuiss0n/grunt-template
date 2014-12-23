@@ -25,7 +25,7 @@ module.exports = function (grunt) {
         'clean:compile',
         'mkdir:compile',
         'less:compile',
-        'newer:autoprefixer:compile',
+        'autoprefixer:compile',
         'rsync:compileJsBower',
         'rsync:compileJsApp',
         'ngconstant:compile',

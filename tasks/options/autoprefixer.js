@@ -8,13 +8,13 @@ module.exports = {
   compile: {
     expand: true,
     cwd: 'dist/css',
-    src: 'style.css',
+    src: 'styles.css',
     dest: 'dist/css'
   },
   build: {
     expand: true,
     cwd: '.build/css/src',
-    src: 'style.css',
+    src: 'styles.css',
     dest: '.build/css/output'
   }
 };
