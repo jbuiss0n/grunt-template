@@ -63,7 +63,7 @@ module.exports = function (grunt) {
 
         'less:build',
         'concat:buildCss',
-        'newer:autoprefixer:build',
+        'autoprefixer:build',
         'cssurlrev:build',
         'cssmin:build',
         'filerev:buildCss',

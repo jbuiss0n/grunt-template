@@ -28,7 +28,6 @@
     "grunt-ng-constant": "~1.0.0",
     "grunt-node-webkit-builder": "^1.0.0",
     "grunt-rsync": "~0.6.2",
-    "grunt-autoprefixer": "~2.0.0",
     "load-grunt-tasks": "~1.0.0",
     "time-grunt": "~1.0.0"
   },
