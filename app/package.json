@@ -1,0 +1,15 @@
+{
+  "name": "grunt-desktop-app",
+  "version": "0.0.1",
+  "main": "index.html",
+  "author":{
+    "name": "Jérémy Buisson",
+    "url": "https://github.com/jbuiss0n"
+  },
+  "window": {
+    "toolbar": false,
+    "frame": false,
+    "width": 1200,
+    "height": 960
+  }
+}

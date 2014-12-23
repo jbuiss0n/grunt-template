@@ -1,5 +1,7 @@
 node_modules
 dist
+pack
+cache
 .tmp
 .compile
 .build

@@ -1,6 +1,6 @@
 'use strict';
 
-// Adds vendor prefixes to CSS files using caniuse.com database
+// grunt-autoprefixer: Adds vendor prefixes to CSS files using caniuse.com database
 module.exports = {
   options: {
     browsers: ['last 2 versions']

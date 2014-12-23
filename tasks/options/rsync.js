@@ -115,7 +115,7 @@ module.exports = {
   },
   buildJsDist: {
     options: {
-      src: '.build/js/output/',
+      src: '.build/js/output/*.js',
       dest: 'dist/'
     }
   },
@@ -136,6 +136,7 @@ module.exports = {
         '--include=/robots.txt',
         '--include=/humans.txt',
         '--include=/version.json',
+        '--include=/package.json',
         '--exclude=*'
       ]
     }

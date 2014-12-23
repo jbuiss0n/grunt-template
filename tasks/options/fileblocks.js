@@ -29,10 +29,12 @@ module.exports = {
     src: 'dist/index.html',
     blocks: {
       styles: {
+        prefix: '',
         cwd: 'dist',
         src: '*.css'
       },
       scripts: {
+        prefix: '',
         cwd: 'dist',
         src: '*.js'
       }
