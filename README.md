@@ -80,6 +80,11 @@ Grunt tasks
 - Build for prod (cf grunt build)
 - Starts a connect server with keepalive
 
+**grunt pack**
+
+- Build for prod (cf grunt build)
+- Package as a cross-platform desktop application using node-webkit
+
 Contributing
 ------------
 
