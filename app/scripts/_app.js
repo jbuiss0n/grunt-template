@@ -2,7 +2,7 @@
 
 angular
   .module('grunt-template-app', [
-    'app.config',
+    'grunt-template-app.config',
     'grunt-template-app.templates',
     'grunt-template-app.comics',
     'grunt-template-app.characters',
