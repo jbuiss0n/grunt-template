@@ -32,7 +32,7 @@ module.exports = {
     cwd: 'app/scripts/',
     src: [
       '**/*.js',
-      '!*.test.js'
+      '!**/*.test.js'
     ],
     dest: 'dist/js/app/',
   },
@@ -113,7 +113,7 @@ module.exports = {
     cwd: 'app/scripts/',
     src: [
       '**/*.js',
-      '!*.test.js'
+      '!**/*.test.js'
     ],
     dest: '.build/js/src/app',
   },
