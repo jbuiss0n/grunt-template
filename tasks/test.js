@@ -7,8 +7,8 @@
 /*
  * test
  * -------
- * Build for dev environment
- * Put views into angular template cache module (so we do not have to manually trigger requests resolving)
+ * Put views into an angular template cache module (so we do not have to manually trigger requests resolving)
+ * Create an angular constant module with config properties
  * Run tests
  */
 module.exports = function (grunt) {
