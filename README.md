@@ -41,37 +41,36 @@ Grunt tasks
  
 > Build the application for production environment
 
--Clean .build & .dist folder
--Create .build & .dist & subfolders
--Minify images into dist
--Revision images
--Compile *.less into one styles.css in .build folder
--Copy CSS dependencies from bower modules
--Concat all css files into styles.css
--Adds vendor prefixes to styles.css
--Replace image references with rev version into styles.css
--Copy output styles.css to dist
--Minify styles.css
--Revision styles.css
--#HTML templates
--Copy Html views from application to .build folder
--Replace image references with rev version
--Remove devcode
--Put views into angular template cache module
--Copy JS dependencies from bower modules
--Copy JS application files to .build folder
--Create an angular constant module with config properties
--Annotate angular dependencies
--Concat all js files into scripts.js
--Uglify/minify scripts.js
--Copy output scripts.js to dist
--Revision scripts.js
--Copy index.html file to dist folder
--Add JS & CSS tags into index.html file
--Remove devcode
--Copy application misc files (robots.txt, favicon.ico, ...)
--Copy FONT dependencies from bower modules
--Output the filesize and gzip size of files
+- Clean .build & .dist folder
+- Create .build & .dist & subfolders
+- Minify images into dist
+- Revision images
+- Compile *.less into one styles.css in .build folder
+- Copy CSS dependencies from bower modules
+- Concat all css files into styles.css
+- Adds vendor prefixes to styles.css
+- Replace image references with rev version into styles.css
+- Copy output styles.css to dist
+- Minify styles.css
+- Revision styles.css
+- Copy Html views from application to .build folder
+- Replace image references with rev version
+- Remove devcode
+- Put views into angular template cache module
+- Copy JS dependencies from bower modules
+- Copy JS application files to .build folder
+- Create an angular constant module with config properties
+- Annotate angular dependencies
+- Concat all js files into scripts.js
+- Uglify/minify scripts.js
+- Copy output scripts.js to dist
+- Revision scripts.js
+- Copy index.html file to dist folder
+- Add JS & CSS tags into index.html file
+- Remove devcode
+- Copy application misc files (robots.txt, favicon.ico, ...)
+- Copy FONT dependencies from bower modules
+- Output the filesize and gzip size of files
 
 **grunt serve (or grunt server:dev)**
 
