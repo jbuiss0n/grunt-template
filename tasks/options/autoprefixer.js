@@ -5,15 +5,15 @@ module.exports = {
   options: {
     browsers: ['last 2 versions']
   },
-  compile: {
+  dev: {
     expand: true,
     cwd: 'dist/css',
     src: 'styles.css',
     dest: 'dist/css'
   },
-  build: {
+  prod: {
     expand: true,
-    cwd: '.build/css/src',
+    cwd: '.build/css/output',
     src: 'styles.css',
     dest: '.build/css/output'
   }

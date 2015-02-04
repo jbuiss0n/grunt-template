@@ -2,12 +2,12 @@
 
 // grunt-contrib-imagemin: Minify images (jpg, gif, png, svg)
 module.exports = {
-  build: {
+  prod: {
     files: [{
       expand: true,
-      cwd: '.build/images',
-      src: '*.{png,jpg,jpeg,gif,svg}',
-      dest: '.build/images'
+      cwd: 'app/images',
+      src: '**/*.{png,jpg,jpeg,gif,svg}',
+      dest: 'dist/images'
     }]
   }
 };

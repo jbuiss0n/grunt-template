@@ -2,7 +2,7 @@
 
 // grunt-bytesize: output the filesize and gzip size of files
 module.exports = {
-  build: {
+  prod: {
     src: [
       'dist/index.html',
       'dist/styles.*.css',

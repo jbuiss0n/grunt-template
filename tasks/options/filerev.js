@@ -6,13 +6,13 @@ module.exports = {
     algorithm: 'md5',
     length: 8
   },
-  buildImg: {
-    src: '.build/images/*'
+  prodImg: {
+    src: 'dist/images/**/*'
   },
-  buildCss: {
-    src: '.build/css/output/styles.css'
+  prodCss: {
+    src: 'dist/styles.css'
   },
-  buildJs: {
-    src: '.build/js/output/scripts.js'
+  prodJs: {
+    src: 'dist/scripts.js'
   }
 };

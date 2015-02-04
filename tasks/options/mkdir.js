@@ -2,24 +2,22 @@
 
 // grunt-mkdir: Creates directory structure
 module.exports = {
-  compile: {
+  dev: {
     options: {
       create: [
         'dist/css',
         'dist/js',
         'dist/js/bower',
         'dist/js/app',
-        'dist/views'
+        'dist/views',
+        'dist/images'
       ]
     }
   },
-  build: {
+  prod: {
     options: {
       create: [
         '.build',
-        '.build/images',
-        '.build/images/src',
-        '.build/images/output',
         '.build/css',
         '.build/css/src',
         '.build/css/output',
@@ -27,7 +25,9 @@ module.exports = {
         '.build/js/src',
         '.build/js/output',
         '.build/views',
-        'dist/'
+        'dist/',
+        'dist/images',
+        'dist/fonts'
       ]
     }
   }

@@ -2,7 +2,7 @@
 
 // grunt-contrib-uglify: Minify JS files
 module.exports = {
-  build: {
+  prod: {
     options: {
       sourceMap: true,
       sourceMapIncludeSources: true,

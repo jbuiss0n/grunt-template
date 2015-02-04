@@ -5,7 +5,7 @@ module.exports = {
   options: {
     prefix: '/'
   },
-  compile: {
+  dev: {
     src: 'dist/index.html',
     blocks: {
       styles: {
@@ -19,13 +19,13 @@ module.exports = {
         src: [
           'bower/angular.js',
           'bower/*.js',
-          'app/*.js',
+          'app/**/*.js',
           '*.js'
         ]
       }
     }
   },
-  build: {
+  prod: {
     src: 'dist/index.html',
     blocks: {
       styles: {

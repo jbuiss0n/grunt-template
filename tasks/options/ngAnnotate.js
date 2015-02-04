@@ -2,11 +2,11 @@
 
 // grunt-ng-annotate: Process Angular source file so they can be easily minified
 module.exports = {
-  build: {
+  prod: {
     files: [{
       expand: true,
       src: [
-        '.build/js/src/app/*.js'
+        '.build/js/src/app/**/*.js'
       ]
     }]
   }

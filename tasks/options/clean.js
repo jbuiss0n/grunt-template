@@ -2,12 +2,12 @@
 
 // grunt-contrib-clean : Clean folders to start fresh
 module.exports = {
-  compile: {
+  dev: {
     src: [
       'dist/*'
     ]
   },
-  build: {
+  prod: {
     src: [
       '.build/*',
       'dist/*'

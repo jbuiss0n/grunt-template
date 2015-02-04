@@ -10,7 +10,7 @@ module.exports = function (grunt) {
 
       if (type === 'dev') {
         tasks = tasks.concat([
-          'compile',
+          'build:dev',
           'connect:livereload',
           'watch'
         ]);
@@ -18,7 +18,7 @@ module.exports = function (grunt) {
 
       if (type === 'prod') {
         tasks = tasks.concat([
-          'build',
+          'build:prod',
           'connect:keepalive'
         ]);
       }

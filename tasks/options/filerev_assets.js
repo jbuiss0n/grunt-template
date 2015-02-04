@@ -1,11 +1,11 @@
 ﻿'use strict';
 
-// Save hashmap of versionned filed created by the `filerev` task on which the `cssurlrev` task operates
+// grunt-filerev-assets: save hashmap of versionned files created by the 'filerev' task on which the 'cssurlrev' & 'htmlurlrev' task operates
 module.exports = {
-  build: {
+  prod: {
     options: {
       dest: '.build/filerev.json',
-      cwd: '.build/'
+      cwd: 'dist/'
     }
   }
 };

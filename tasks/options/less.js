@@ -5,17 +5,18 @@ module.exports = {
   options: {
     paths: ['app/styles', 'app/bower_components'],
   },
-  compile: {
+  dev: {
     files: {
-      'dist/css/styles.css': 'app/styles/*.less'
+      'dist/css/styles.css': 'app/styles/**/*.less'
     },
     options: {
-      debugInfo: true
+      debugInfo: true,
+      strictImports: true
     }
   },
-  build: {
+  prod: {
     files: {
-      '.build/css/src/styles.css': 'app/styles/*.less'
+      '.build/css/src/styles.css': 'app/styles/**/*.less'
     },
     options: {
       strictImports: true,

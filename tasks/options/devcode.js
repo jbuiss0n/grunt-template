@@ -12,14 +12,14 @@ module.exports = {
       close: 'endcode'
     }
   },
-  buildViews: {
+  prodViews: {
     options: {
       source: '.build/views',
       dest: '.build/views',
       env: 'production'
     }
   },
-  buildHtml: {
+  prodHtml: {
     options: {
       source: 'dist',
       dest: 'dist',

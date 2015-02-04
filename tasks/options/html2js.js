@@ -18,11 +18,11 @@ module.exports = {
       removeStyleLinkTypeAttributes: true
     }
   },
-  compile: {
+  dev: {
     src: [],
     dest: 'dist/js/app-templates.js'
   },
-  build: {
+  prod: {
     options: {
       base: '.build'
     },

@@ -2,7 +2,7 @@
 
 // grunt-cssurlrev: Update reference to assets in CSS files to use versionned files created with the filerev task.
 module.exports = {
-  build: {
+  prod: {
     options: {
       assets: '.build/filerev.json'
     },

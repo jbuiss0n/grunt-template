@@ -10,11 +10,11 @@ module.exports = {
       livereload: false
     },
     files: [
-      'app/styles/*.less'
+      'app/styles/**/*.less'
     ],
     tasks: [
-      'less:compile',
-      'newer:autoprefixer:compile'
+      'less:dev',
+      'autoprefixer:dev'
     ]
   },
   stylesSoftReload: {
@@ -25,16 +25,16 @@ module.exports = {
       'app/views/**/*.html'
     ],
     tasks: [
-      'rsync:compileViews'
+      'copy:devViews'
     ]
   },
   html: {
     files: [
-      'app/*.html'
+      'app/**/*.html'
     ],
     tasks: [
-      'rsync:compileHtml',
-      'fileblocks:compile'
+      'copy:devHtml',
+      'fileblocks:dev'
     ]
   },
   config: {
@@ -43,23 +43,22 @@ module.exports = {
   },
   scripts: {
     files: [
-      'app/scripts/*.js',
       'app/scripts/**/*.js',
-      '!app/scripts/*.test.js',
       '!app/scripts/**/*.test.js'
     ],
     tasks: [
-      'rsync:compileJsApp'
+      'copy:devJsApp'
     ]
   },
   mics: {
     files: [
-      'app/images/*',
+      'app/images/**/*',
       'app/*.ico',
       'app/*.txt'
     ],
     tasks: [
-      'rsync:compileMisc'
+      'copy:devMisc',
+      'copy:devImages'
     ]
   }
 };
