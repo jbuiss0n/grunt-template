@@ -3,8 +3,7 @@ dist
 pack
 cache
 .tmp
-.compile
 .build
-.newer-cache
+reports
 app/bower_components
 npm-debug.log

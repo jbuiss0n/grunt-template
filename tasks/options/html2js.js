@@ -22,6 +22,13 @@ module.exports = {
     src: [],
     dest: 'dist/js/app-templates.js'
   },
+  test: {
+    options: {
+      base: '.build'
+    },
+    src: '.build/views/**/*.html',
+    dest: '.tmp/js/app-templates.js'
+  },
   prod: {
     options: {
       base: '.build'

@@ -20,6 +20,16 @@ module.exports = {
       }*/
     }
   },
+  test: {
+    options: {
+      dest: '.tmp/js/config.js'
+    },
+    /* If specific test config (DO NOT merge with default)
+    constants: {
+      CONFIG: grunt.file.readJSON('config/test.json')
+    }
+    */
+  },
   prod: {
     options: {
       dest: '.build/js/src/config.js',
